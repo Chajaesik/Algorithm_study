@@ -9,7 +9,9 @@ for i in range(n):
 
 for i in postfix:
     if i >= 'A' and i <= 'Z':
+        print('i : ',i)
         stack.append(num[ord(i)-65])
+        print(stack)
     else:
         s1 = stack.pop()
         s2 = stack.pop()
